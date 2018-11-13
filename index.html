@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="./assets/javascript/game.js"></script>
+    <title>Gem Game</title>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1 class="display-4">Gem Game!</h1>
+        <p class="lead">You will be given a random number at the start of the game. There are 4 crystals below.
+            By clicking on a crystal you will add a specific amount of points to your total score.
+        </p>
+        <hr class="my-4">
+        <p>Win the game by matching your total score to random number, Lose the game if your total score goes above the
+            random number.
+            Click on each crystal to find it's value. This value changes each time the game restarts.
+        </p>
+
+    </div>
+    <div class="row">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <p id="randNum"> </p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <p id="wins"> </p>
+                <p id="looses"></p>
+            </div>
+        </div>
+    </div>
+    <img id="blue" class="gem-img" src="./assets/images/blue-gem.png">
+    <img id="pink" class="gem-img" src="./assets/images/pink-gem.png">
+    <img id="purple" class="gem-img" src="./assets/images/purple-gem.png">
+    <img id="yellow" class="gem-img" src="./assets/images/yellow-gem.png">
+
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <p id="userNum"> </p>
+        </div>
+    </div>
+</body>
+
+</html>
